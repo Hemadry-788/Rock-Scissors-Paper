@@ -74,7 +74,7 @@ const playgame = (userchoice) => {
         return;
     }
 
-    let userwin = true; // ✅ Moved outside the if-else block
+    let userwin = true; 
 
     if (userchoice === "rock") {
         userwin = compchoice === "paper" ? false : true;
@@ -84,7 +84,7 @@ const playgame = (userchoice) => {
         userwin = compchoice === "rock" ? false : true;
     }
 
-    showscore(userchoice, compchoice, userwin); // ✅ now userwin is always defined
+    showscore(userchoice, compchoice, userwin); 
 };
 
 
